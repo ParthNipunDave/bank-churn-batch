@@ -10,6 +10,7 @@ steps:
     id: 'Pushing Docker to AR'
     args: ['push','us-central1-docker.pkg.dev/sublime-state-413617/ci-cd-batch-bank-churn/bank-batch-pred:$COMMIT_SHA']
 
+
   - name: 'gcr.io/cloud-builders/gcloud'
     id:  'Upload Model'
     args: ['ai','models','upload',
